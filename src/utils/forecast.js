@@ -13,7 +13,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             callback(undefined,{
-                forecast:'The current temperature is '+response.body.current.temperature+"F .It feels like "+ response.body.current.feelslike + " .The wind speed is "+ response.body.current.wind_speed
+                forecast:'Forecast : The current temperature is '+response.body.current.temperature+"degrees .It feels like "+ response.body.current.feelslike + " degrees .The wind speed is "+ response.body.current.wind_speed+"."
                 /*temperature:response.body.current.temperature,
                 feelslike:response.body.current.feelslike,*/
             })

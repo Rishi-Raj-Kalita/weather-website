@@ -37,13 +37,13 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
         name:'Rishi',
-        helpText:'These are your help contents'
+        helpText:'If you are unable to find the forecast of any location then we are sorry as the api used could not fetch data for that location. Try another location'
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title:'About me',
+        title:'About',
         name:'Rishi',
         aboutText:'Studying Btech'
     })
